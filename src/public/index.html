@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Image Uploader</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  
+  <div id="container" class="open">
+
+    <h2>Upload your image</h2>
+    <p>File should be jpeg, png...</p>
+
+    <div id="drag-drop" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
+
+      <img src="images/image.svg" alt="image">
+
+    </div>
+
+    <small>Or</small>
+
+    <input id="image" name="image" type="file" onchange="handleChangeImage(event)">
+    <label for="image">Choose a file</label>
+
+  </div>
+
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
